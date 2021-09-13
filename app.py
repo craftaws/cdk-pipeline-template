@@ -2,7 +2,7 @@
 
 import json
 from aws_cdk import (
-    core
+    core,
 )
 
 from pipeline_stack import CdkPipelineStack as pipeline

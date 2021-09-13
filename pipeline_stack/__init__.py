@@ -27,6 +27,7 @@ class CdkPipelineStack(core.Stack):
         super().__init__(scope, id, **kwargs)
 
         param = Parameters.instance()
+
         pipeline_name = param.getParameter('pipeline_name')
         connection_arn = param.getParameter('connection_arn')
         github_owner = param.getParameter('github_owner')
